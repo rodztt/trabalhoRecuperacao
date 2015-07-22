@@ -34,9 +34,9 @@ def teste_new():
 		return jsonify({'status': False})
 
 	p = request.get_json()
-	a = Aluno()
-	a.nome = p['identificacao']
-	a.idade = p['movimentos']
+	a = Testes()
+	a.identificacao = p['identificacao']
+	a.movimentos = p['movimentos']
 	db.session.add(a)
 	db.session.commit()
 
@@ -45,3 +45,4 @@ def teste_new():
 
 if __name__ == '__main__':
 	app.run(debug=True)
+
