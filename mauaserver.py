@@ -22,7 +22,7 @@ def homepage():return '''TESTE HANNOI<br><br>route [/]:<br><br>\t\
 def testes_list():
 	testes = []
 	for i in Testes.query.all():
-		print i.nome, i.idade
+		print i.identificacao, i.movimentos
 		testes.append({'id': i.id, 'identificacao': i.identificacao, 'movimentos': i.movimentos})
 
 	return json.dumps(testes)
