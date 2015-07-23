@@ -50,5 +50,11 @@ for f in range(l):
     n=hannoi(p[f],1,2,3)
     j.append({'identificacao':'teste%i'%f,'movimentos':n})
 f={'contador':l,'testes':j}
-f_json=json.dumps(f)
-print f_json
+
+#Enviando ao servidor
+
+url = 'http://127.0.0.1:5000/conjunto/new'
+payload = f
+headers = {'content-type': 'application/json'}
+
+response = requests.post(url, data=json.dumps(payload), headers=headers)
