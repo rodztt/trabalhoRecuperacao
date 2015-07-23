@@ -17,9 +17,7 @@ def homepage():return '''TESTE HANNOI By RTT <br><br>
 	<br>Lista os testes: [<a href= \"http://localhost:5000/testes">/testes</a>]<br>\
 	
 	<br>Link para postar os testes: [<a href= \"http://localhost:5000/medida/new">/teste/new</a>]<br>\
-	
-	<br>Link para postar novo conjunto: [<a href= \"http://localhost:5000/conjunto/new">/conjunto/new</a>]<br>\
-
+		
 	<br>Lista os conjuntos: [<a href= \"http://localhost:5000/conjuntos">/conjuntos</a>]<br>\
 	
 	'''
