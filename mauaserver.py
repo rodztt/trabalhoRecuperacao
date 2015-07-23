@@ -13,7 +13,6 @@ from model import *
 @app.route('/')
 def homepage():return '''TESTE HANNOI By RTT <br><br>
 	Rotas do servidor:<br>
-
 	<br>Lista os testes: [<a href= \"http://localhost:5000/testes">/testes</a>]<br>\
 	
 	<br>Link para postar os testes: [<a href= \"http://localhost:5000/medida/new">/teste/new</a>]<br>\
@@ -49,18 +48,21 @@ def teste_new():
 		return jsonify({'status': False})
 
 	p = request.get_json()
+	
 	b = p['contador']
 	w=[]
 	a = Conjuntos()
 	a.contador=p['contador']
 	db.session.add(a)
+	g = Conjuntos.query.all()
 	for i in range(b):
                 w.append('a'+str(i))
                 w[i]= Testes()
 	for i in range(b):
                 w[i].identificacao = p['testes'][i]['identificacao'] 
                 w[i].movimentos = p['testes'][i]['movimentos']
-                db.session.add(w[i])        
+                w[i].foreign_id=g[-1].id
+                db.session.add(w[i]) 
         db.session.commit()
 
 	return jsonify({'status:': True})
@@ -68,5 +70,4 @@ def teste_new():
 
 if __name__ == '__main__':
 	app.run(debug=True)
-
 
