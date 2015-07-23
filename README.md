@@ -14,7 +14,7 @@ Este trabalho consiste de:
 
 - um seridor web que foi constriudo com o framework FLASK e está preparado para gravar e listar informações (do tipo JSON) de um banco de dados(SQLalchemy) que se chama testes.db .  As rotas e suas respectivas funções do servidor são:
 
-      Lista os testes: [<a href= http://localhost:5000/testes (método GET)
+      	    Lista os testes: http://localhost:5000/testes (método GET)
 	
 	    Link para postar os testes: http://localhost:5000/medida/new (método POST)
 		
