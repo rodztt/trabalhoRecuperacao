@@ -1,3 +1,6 @@
+#Para usar este modulo, basta roda lo e o usuario informar a qtd de testes
+#e depois quantas pecas em cada teste
+
 from mauaserver import *
 
 #Funcao hannoi com contador
@@ -34,7 +37,7 @@ while (True):
     try:
         for i in range(l):
             while (True):
-                x = int(raw_input(("Digite um numero de pecas maior que 0 e menor que 30. #%i:  ")%i))
+                x = int(raw_input(("Digite um numero de pecas maior que 0 e menor que 30. teste#%i:  ")%i))
                 if (x>0 and x<=30):
                     break
             p.append(x)
@@ -58,3 +61,5 @@ payload = f
 headers = {'content-type': 'application/json'}
 
 response = requests.post(url, data=json.dumps(payload), headers=headers)
+print ("Dados enviados: ")
+print json.dumps(payload)
