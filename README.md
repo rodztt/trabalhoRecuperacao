@@ -12,7 +12,7 @@ Rodrigo Tanure Tricarico R.A: 12.01517-2
 
 Este trabalho consiste de:
 
-- um seridor web que foi constriudo com o framework FLASK e está preparado para gravar e listar informações (do tipo JSON) de um banco de dados(SQLalchemy) que se chama testes.db .  As rotas e suas respectivas funções do servidor são:
+- um seridor web que foi constriudo com o framework FLASK e está preparado para gravar e listar informações (do tipo JSON) de um banco de dados (SQLalchemy), que deve ter sido previamente criado, que se chama testes.db .  As rotas e suas respectivas funções do servidor são:
 
       	    Lista os testes: http://localhost:5000/testes (método GET)
 	
