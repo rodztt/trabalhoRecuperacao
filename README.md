@@ -44,5 +44,5 @@ Este trabalho consiste de:
 }
   (obs: a lista testes pode conter mais ou menos informacoes dependendo do usuario)
 
-- um cliente chamado Hannoi2.py que recebe uma lista de números (python)  onde cada número representa a quantidade de peças de cada teste. O programa faz os calculos de quantos movimentos serão nescessários para cada teste e envia as informações (do mesmo tipo acima) para o servidor.
+- um cliente chamado Hannoi2.py que contem uma função chamada Enviajson(n) onde n é uma lista de números inteiros que representam a quantidade de peças em cada teste. O programa faz os calculos de quantos movimentos serão nescessários para cada teste e envia as informações (do mesmo tipo acima) para o servidor.
 
