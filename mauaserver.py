@@ -71,3 +71,7 @@ def teste_new():
 if __name__ == '__main__':
 	app.run(debug=True)
 
+# Nota: 4.9
+# Comentario: excelente separacao e uso de rotas/funcoes tanto no cliente como no
+# servidor. Apenas um pequeno erro em relacao a inclusao de modulos, ja com a
+# sugestao de correcao sugerida

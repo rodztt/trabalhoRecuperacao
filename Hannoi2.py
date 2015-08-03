@@ -2,7 +2,7 @@
 #Enviajson(n) sendo n uma lista de numeros inteiros onde 0 corresponde o final
 #da lista
 
-from mauaserver import *
+#from mauaserver import *
 
 #Funcao hannoi com contador
 
