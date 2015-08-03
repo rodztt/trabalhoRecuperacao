@@ -1,7 +1,10 @@
 #Para usar este modulo, basta roda lo e o usuario informar a qtd de testes
 #e depois quantas pecas em cada teste
 
-from mauaserver import *
+import requests
+import json
+
+#from mauaserver import *
 
 #Funcao hannoi com contador
 
